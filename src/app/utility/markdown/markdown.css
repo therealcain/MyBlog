@@ -1,0 +1,58 @@
+:host ::ng-deep p, :host ::ng-deep code, :host ::ng-deep li {
+  font-size: 18px !important;
+  line-height: 24px;
+}
+:host ::ng-deep a {
+  color: purple;
+}
+:host ::ng-deep h1, :host ::ng-deep h2, :host ::ng-deep h3, :host ::ng-deep h4, :host ::ng-deep h5, :host ::ng-deep h6 {
+  text-align: center;
+  padding-top: 15px;
+}
+:host ::ng-deep h1 {
+  font-size: 45px !important;
+}
+:host ::ng-deep h2 {
+  font-size: 40px !important;
+}
+:host ::ng-deep h3 {
+  font-size: 35px !important;
+}
+:host ::ng-deep h4 {
+  font-size: 30px !important;
+}
+:host ::ng-deep h5 {
+  font-size: 25px !important;
+}
+:host ::ng-deep h6 {
+  font-size: 20px !important;
+}
+:host ::ng-deep code {
+  border-radius: 6px;
+}
+:host ::ng-deep blockquote {
+  position: relative;
+  margin: 20px auto;
+  padding-left: 40px;
+  border-left: 2px solid black;
+  color: #191919;
+}
+:host ::ng-deep blockquote p {
+  opacity: 0.8;
+}
+:host ::ng-deep blockquote:hover p {
+  opacity: 0.6;
+}
+:host ::ng-deep img {
+  max-width: 70%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+:host ::ng-deep pre {
+  background: #424242;
+}
+
+/*# sourceMappingURL=markdown.css.map */

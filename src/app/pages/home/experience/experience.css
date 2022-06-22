@@ -1,0 +1,50 @@
+.slide-in-bck-center {
+  animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.container {
+  width: 100%;
+  min-height: 250px;
+  background-color: #68676e;
+}
+.container .title {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  padding-top: 50px;
+}
+.container .company {
+  display: flex;
+}
+.container .company .company-image {
+  color: white;
+  padding: 0 15px;
+}
+.container .company .company-info {
+  padding: 16px;
+}
+.container .company .company-info .company-name {
+  color: white;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.container .company .company-info .company-date {
+  color: lightgray;
+}
+.container .company .company-info .company-description {
+  color: white;
+}
+
+/*# sourceMappingURL=experience.css.map */

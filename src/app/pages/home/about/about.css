@@ -1,0 +1,54 @@
+.swing-in-top-fwd {
+  animation: swing-in-top-fwd 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+}
+
+@keyframes swing-in-top-fwd {
+  0% {
+    transform: rotateX(-100deg);
+    transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-origin: top;
+    opacity: 1;
+  }
+}
+.container {
+  width: 100%;
+  min-height: 340px;
+  background-color: #211e26;
+}
+.container .profile-container {
+  pointer-events: none;
+  float: right;
+  margin-right: 15px;
+}
+@media (max-width: 600px) {
+  .container .profile-container {
+    float: none;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 1000px) {
+  .container .profile-container {
+    margin-right: 0;
+  }
+}
+.container .profile-container .profile {
+  margin: 25px 25px;
+  width: 280px;
+  border-radius: 50%;
+  border: 2px solid black;
+  shape-outside: circle(50%);
+  box-shadow: 0 0 5px black;
+  display: flex;
+}
+.container .text {
+  color: white;
+  font-size: 16px;
+  padding: 26px;
+}
+
+/*# sourceMappingURL=about.css.map */

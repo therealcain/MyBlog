@@ -1,0 +1,44 @@
+
+@import "./animations.scss";
+
+.container {
+  width: 100%;
+  min-height: 250px;
+  background-color: #68676e;
+
+  .title {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    padding-top: 50px;
+  }
+
+  .company {
+    display: flex;
+
+    .company-image {
+      color: white;
+      padding: 0 15px;
+    }
+
+    .company-info {
+      padding: 16px;
+
+      .company-name {
+        color: white;
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .company-date {
+        color: lightgray;
+      }
+
+      .company-description {
+        color: white;
+      }
+    }
+  }
+}

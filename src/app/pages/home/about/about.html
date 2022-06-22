@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="profile-container"
+       #ImageObserver intersection-observer (onVisible)="cssInjector.inject(ImageObserver, 'swing-in-top-fwd')"
+       style="opacity: 0">
+    <img class="profile" src="https://i.imgur.com/fv2gJxo.jpg">
+  </div>
+
+  <div class="text"
+       #TextObserver intersection-observer (onVisible)="cssInjector.inject(TextObserver, 'swing-in-top-fwd')"
+       style="opacity: 0">
+    My name is Eviatar Mor, I'm programming since I was 13 years old. I started out by writing Counter-Strike mods and
+    video games in Game Maker and RPG Maker.<br>
+    Nowadays I'm mostly proficient with low-level programming languages, and lately I've been getting
+    into web-development and web-design. I also a student for Computer Science in The Open University of Israel.<br>
+    I strive to learn innovative topics, and understand the core principles of used technology and algorithms.<br>
+    I'm trying to push myself further in the industry, personal projects.
+  </div>
+</div>

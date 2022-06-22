@@ -1,0 +1,53 @@
+@import "animations.scss";
+
+.footer {
+  width: 100%;
+  height: 300px;
+  background-color: #3B3C36;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin: 50px 0;
+  }
+
+  .elements-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+
+    .element {
+      flex-basis: 33%;
+      color: white;
+      fill: white;
+      cursor: pointer;
+
+      @media (max-width: 600px) {
+        flex-basis: 50%;
+      }
+    }
+
+    .element:after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 0;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+    }
+
+    .element:hover:after {
+      width: 100%;
+      background: dimgray;
+    }
+  }
+}

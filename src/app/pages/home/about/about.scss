@@ -1,0 +1,40 @@
+@import "animations.scss";
+
+.container {
+  width: 100%;
+  min-height: 340px;
+  //background-color: #3B3B30;
+  background-color: #211e26;
+
+  .profile-container {
+    pointer-events: none;
+    float: right;
+    margin-right: 15px;
+
+    @media (max-width: 600px) {
+      float: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (max-width: 1000px) {
+      margin-right: 0;
+    }
+
+    .profile {
+      margin: 25px 25px;
+      width: 280px;
+      border-radius: 50%;
+      border: 2px solid black;
+      shape-outside: circle(50%);
+      box-shadow: 0 0 5px black;
+      display: flex;
+    }
+  }
+
+  .text {
+    color: white;
+    font-size: 16px;
+    padding: 26px;
+  }
+}

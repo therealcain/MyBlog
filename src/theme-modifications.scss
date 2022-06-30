@@ -6,3 +6,32 @@
 .mat-paginator-page-size-value {
   display: none;
 }
+
+mat-card {
+  margin: 15px 40px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform .2s !important;
+}
+
+mat-card:hover {
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%) !important;
+  transform: scale(1.03) !important;
+}
+
+mat-card-header{
+  width: 100%;
+}
+
+mat-card-content {
+  overflow-wrap: anywhere;
+}
+
+mat-card-footer {
+  display: flex;
+  padding: 10px;
+}
+
+mat-paginator {
+  margin-top: 30px;
+}

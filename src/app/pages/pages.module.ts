@@ -19,6 +19,9 @@ import {ArticlesPageComponent} from "./articles/articles.component";
 import {UtilityModule} from "../utility/utility.module";
 import {MarkdownModule} from "ngx-markdown";
 import {HttpClient} from "@angular/common/http";
+import {ProjectsComponent} from "./home/projects/projects.component";
+import {MatTabsModule} from "@angular/material/tabs";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 @NgModule({
   imports: [
@@ -35,7 +38,9 @@ import {HttpClient} from "@angular/common/http";
     MarkdownModule.forRoot({
       loader: HttpClient,
       sanitize: SecurityContext.NONE
-    })
+    }),
+    MatTabsModule,
+    MatExpansionModule
   ],
   declarations: [
     HomeComponent,
@@ -45,7 +50,8 @@ import {HttpClient} from "@angular/common/http";
     SkillsComponent,
     ExperienceComponent,
     ArticlesComponent,
-    ArticlesPageComponent
+    ArticlesPageComponent,
+    ProjectsComponent
   ],
   exports: [
     HomeComponent,

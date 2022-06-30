@@ -1,0 +1,42 @@
+<div class="container">
+
+  <div class="title">Projects</div>
+
+  <mat-tab-group>
+    <mat-tab label="GitHub">
+      <mat-card *ngFor="let info of (MyProjects | slice: lowValue : highValue)" (click)="openLink(info.url)">
+        <mat-card-header>
+          <mat-card-title>{{info.title}}</mat-card-title>
+          <mat-card-subtitle>Language: {{info.language}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          {{info.description}}
+        </mat-card-content>
+      </mat-card>
+
+      <mat-paginator [length]="MyProjects.length"
+                     [pageSize]="PageSize" [showFirstLastButtons]="true"
+                     [pageIndex]="0" (page)="getPaginatorData($event)">
+      </mat-paginator>
+    </mat-tab>
+
+<!--    <mat-tab label="Web Based">-->
+<!--      <div style="padding: 15px 40px;">-->
+<!--        <mat-accordion>-->
+<!--          <mat-expansion-panel>-->
+<!--            <mat-expansion-panel-header>-->
+<!--              <mat-panel-title>-->
+<!--                This is the expansion title-->
+<!--              </mat-panel-title>-->
+<!--              <mat-panel-description>-->
+<!--                This is a summary of the content-->
+<!--              </mat-panel-description>-->
+<!--            </mat-expansion-panel-header>-->
+<!---->
+<!--          </mat-expansion-panel>-->
+<!--        </mat-accordion>-->
+<!--      </div>-->
+<!--    </mat-tab>-->
+  </mat-tab-group>
+
+</div>

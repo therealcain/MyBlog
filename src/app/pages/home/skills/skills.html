@@ -8,39 +8,8 @@
   <div class="elements-container"
        #Elements intersection-observer (onVisible)="cssInjector.inject(Elements, 'puff-in-center')"
        style="opacity: 0">
-    <div class="element">Modern C++</div>
-    <div class="element">C</div>
-    <div class="element">C#</div>
-    <div class="element">Assembly Language</div>
-    <div class="element">Java</div>
-    <div class="element">JavaScript</div>
-    <div class="element">TypeScript</div>
-    <div class="element">Python</div>
-    <div class="element">HTML</div>
-    <div class="element">CSS</div>
-    <div class="element">SASS</div>
-    <div class="element">Bash</div>
-    <div class="element">Arduino</div>
-    <div class="element">Linux</div>
-    <div class="element">OpenGL</div>
-    <div class="element">OpenCV</div>
-    <div class="element">Angular</div>
-    <div class="element">Windows API</div>
-    <div class="element">SDL</div>
-    <div class="element">SFML</div>
-    <div class="element">GLFW</div>
-    <div class="element">Selenium</div>
-    <div class="element">P5</div>
-    <div class="element">CMake</div>
-    <div class="element">Make</div>
-    <div class="element">GDB</div>
-    <div class="element">Valgrind</div>
-    <div class="element">Git</div>
-    <div class="element">SSH</div>
-    <div class="element">WHMCS</div>
-    <div class="element">Postman</div>
-    <div class="element">Travis CI</div>
-    <div class="element">Vim</div>
-    <div class="element">Sockets Programming</div>
+
+    <div class="element" *ngFor="let el of elements">{{el}}</div>
+
   </div>
 </div>

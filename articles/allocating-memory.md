@@ -478,7 +478,7 @@ delete[] objects; // okay
 
 Since we know that every time that when we want to allocate memory on the heap, we must also delete it when we are not using it, this is a problem since it's very easy to forget to delete that memory, especially when working on big projects, C++ gives a solution to this, and they are called smart pointers.
 
-C++ gives us 4 different types of smart pointers, I'm going to talk about them very briefly, and then later on in this book we will implement our own smart pointers!
+C++ gives us 4 different types of smart pointers, I'm going to talk about them very briefly.
 
 * [`std::unique_ptr`](https://en.cppreference.com/w/cpp/memory/unique_ptr) is the basic smart pointer of them all, it's deallocating the memory when we reach the end of the scope.
 
